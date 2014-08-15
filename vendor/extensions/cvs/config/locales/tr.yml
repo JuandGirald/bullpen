@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      cvs:
+        title: Cvs
+    cvs:
+      admin:
+        cvs:
+          actions:
+            create_new: Yeni Ekle Cv
+            reorder: Tekrar sirala Cvs
+            reorder_done: Tekrar siralama tamamlandiCvs
+          records:
+            title: Cvs
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Cvs yok henuz.  Tikla "Yeni Ekle Cv" eklemek senin ilk cv.
+          cv:
+            view_live_html: Bunu canlu cv goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle cv
+            delete: Bunu Sil cv sonsuza dek
+      cvs:
+        show:
+          other: Diger Cvs
+  activerecord:
+    attributes:
+      'refinery/cvs/cv':
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow Reputation
+        blog: Blog
+        photo: Photo

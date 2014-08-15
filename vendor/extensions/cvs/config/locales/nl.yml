@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      cvs:
+        title: Cvs
+    cvs:
+      admin:
+        cvs:
+          actions:
+            create_new: Nieuwe Cv toevoegen
+            reorder: De volgorde van de Cvs wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Cv-volgorde
+          records:
+            title: Cvs
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Cvs. Druk op 'Nieuwe Cv toevoegen' om de eerste toe te voegen.
+          cv:
+            view_live_html: Deze cv op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze cv
+            delete: Deze cv definitief verwijderen
+      cvs:
+        show:
+          other: Andere Cvs
+  activerecord:
+    attributes:
+      'refinery/cvs/cv':
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow Reputation
+        blog: Blog
+        photo: Photo

@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      cvs:
+        title: Cvs
+#        article: masculino/femenino
+    cvs:
+      admin:
+        cvs:
+          actions:
+            create_new: Crear nuevo cv
+            reorder: Reordenar cvs
+            reorder_done: Reordenación de cvs completada
+          records:
+            title: Cvs
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay cvs todavía. Pulsa en "Crear nuevo Cv" para crear tu primer cv.
+          cv:
+            view_live_html: Ver este cv como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este cv
+            delete: Borrar este cv para siempre
+      cvs:
+        show:
+          other: Otros cvs
+  activerecord:
+    attributes:
+      'refinery/cvs/cv':
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow Reputation
+        blog: Blog
+        photo: Photo

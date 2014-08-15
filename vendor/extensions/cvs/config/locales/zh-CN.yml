@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      cvs:
+        title: Cvs
+    cvs:
+      admin:
+        cvs:
+          actions:
+            create_new: 建立新的 Cv
+            reorder: 对 Cvs 重新排序
+            reorder_done: 对 Cvs 的重新排序结束
+          records:
+            title: Cvs
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Cvs yet. Click "Add New Cv" to add your first cv.
+            no_items_yet: 目前没有 Cvs . 点击 "Add New Cv" 创建一个cv.
+          cv:
+            view_live_html: 查看 cv 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 cv
+            delete: 永久删除 cv
+      cvs:
+        show:
+          other: 其他 Cvs
+  activerecord:
+    attributes:
+      'refinery/cvs/cv':
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow Reputation
+        blog: Blog
+        photo: Photo

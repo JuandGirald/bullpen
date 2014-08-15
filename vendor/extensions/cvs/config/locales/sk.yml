@@ -1,0 +1,32 @@
+sk:
+  refinery:
+    plugins:
+      cvs:
+        title: Cvs
+    cvs:
+      admin:
+        cvs:
+          actions:
+            create_new: Pridať Cv
+            reorder: Preusporiadať Cvs
+            reorder_done: Koniec radenia Cvs
+          records:
+            title: Cvs
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Cvs. Kliknite na "Pridať Cv" pre pridanie prvého cv.
+          cv:
+            view_live_html: Zobraziť náhľad cv<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť cv
+            delete: Zmazať cv
+      cvs:
+        show:
+          other: Daľšie Cvs
+  activerecord:
+    attributes:
+      'refinery/cvs/cv':
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow Reputation
+        blog: Blog
+        photo: Photo

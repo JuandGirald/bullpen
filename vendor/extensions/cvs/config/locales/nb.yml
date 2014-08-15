@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      cvs:
+        title: Cvs
+    cvs:
+      admin:
+        cvs:
+          actions:
+            create_new: Lag en ny Cv
+            reorder: Endre rekkefølgen på Cvs
+            reorder_done: Ferdig å endre rekkefølgen Cvs
+          records:
+            title: Cvs
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Cvs enda. Klikk på "Lag en ny Cv" for å legge til din første cv.
+          cv:
+            view_live_html: Vis hvordan denne cv ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne cv
+            delete: Fjern denne cv permanent
+      cvs:
+        show:
+          other: Andre Cvs
+  activerecord:
+    attributes:
+      'refinery/cvs/cv':
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow Reputation
+        blog: Blog
+        photo: Photo
