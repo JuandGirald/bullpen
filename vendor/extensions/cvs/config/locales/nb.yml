@@ -1,10 +1,27 @@
 nb:
   refinery:
     plugins:
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        projects:
+          actions:
+            create_new: Lag en ny Project
+            reorder: Endre rekkefølgen på Projects
+            reorder_done: Ferdig å endre rekkefølgen Projects
+          records:
+            title: Projects
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Projects enda. Klikk på "Lag en ny Project"
+              for å legge til din første project.
+          project:
+            view_live_html: Vis hvordan denne project ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne project
+            delete: Fjern denne project permanent
         cvs:
           actions:
             create_new: Lag en ny Cv
@@ -13,17 +30,26 @@ nb:
           records:
             title: Cvs
             sorry_no_results: Beklager! Vi fant ikke noen resultater.
-            no_items_yet: Det er ingen Cvs enda. Klikk på "Lag en ny Cv" for å legge til din første cv.
+            no_items_yet: Det er ingen Cvs enda. Klikk på "Lag en ny Cv" for å legge
+              til din første cv.
           cv:
-            view_live_html: Vis hvordan denne cv ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            view_live_html: Vis hvordan denne cv ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
             edit: Rediger denne cv
             delete: Fjern denne cv permanent
+      projects:
+        show:
+          other: Andre Projects
       cvs:
         show:
           other: Andre Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

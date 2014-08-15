@@ -1,10 +1,26 @@
 it:
   refinery:
     plugins:
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        projects:
+          actions:
+            create_new: Aggiungi Nuovo Project
+            reorder: Riordina Projects
+            reorder_done: Termina il Riordino di Projects
+          records:
+            title: Projects
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Projects. Clicca "Aggiungi Nuovo Project"
+              per aggiungere il tuo primo project.
+          project:
+            view_live_html: Guarda live questo project <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo project
+            delete: Rimuovi per sempre questo project
         cvs:
           actions:
             create_new: Aggiungi Nuovo Cv
@@ -12,18 +28,26 @@ it:
             reorder_done: Termina il Riordino di Cvs
           records:
             title: Cvs
-            sorry_no_results: "Spiacenti! Nessun risultato trovato"
-            no_items_yet: Non ci sono ancora Cvs. Clicca "Aggiungi Nuovo Cv" per aggiungere il tuo primo cv.
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Cvs. Clicca "Aggiungi Nuovo Cv" per aggiungere
+              il tuo primo cv.
           cv:
             view_live_html: Guarda live questo cv <br/><em>(apre una nuova finestra)</em>
             edit: Modifica questo cv
             delete: Rimuovi per sempre questo cv
+      projects:
+        show:
+          other: Altri Projects
       cvs:
         show:
           other: Altri Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

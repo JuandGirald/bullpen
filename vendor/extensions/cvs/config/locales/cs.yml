@@ -1,10 +1,26 @@
 cs:
   refinery:
     plugins:
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        projects:
+          actions:
+            create_new: Přidat Project
+            reorder: Řadit Projects
+            reorder_done: Konec řazení Projects
+          records:
+            title: Projects
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Projects. Zvolte "Přidat Project"
+              pro přidání prvního project.
+          project:
+            view_live_html: Zobrazit náhled project<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit project
+            delete: Smazat project
         cvs:
           actions:
             create_new: Přidat Cv
@@ -13,17 +29,25 @@ cs:
           records:
             title: Cvs
             sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
-            no_items_yet: Zatím nebyly vytvořeny žádné Cvs. Zvolte "Přidat Cv" pro přidání prvního cv.
+            no_items_yet: Zatím nebyly vytvořeny žádné Cvs. Zvolte "Přidat Cv" pro
+              přidání prvního cv.
           cv:
             view_live_html: Zobrazit náhled cv<br/><em>(otevře se v novém okně)</em>
             edit: Upravit cv
             delete: Smazat cv
+      projects:
+        show:
+          other: Další Projects
       cvs:
         show:
           other: Další Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

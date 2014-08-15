@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815194728) do
+ActiveRecord::Schema.define(version: 20140815211610) do
 
   create_table "refinery_cvs", force: true do |t|
     t.string   "name"
@@ -23,6 +23,16 @@ ActiveRecord::Schema.define(version: 20140815194728) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "refinery_cvs_projects", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "cv_id"
   end
 
   create_table "refinery_images", force: true do |t|

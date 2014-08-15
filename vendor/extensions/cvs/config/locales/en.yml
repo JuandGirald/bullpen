@@ -1,10 +1,26 @@
 en:
   refinery:
     plugins:
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        projects:
+          actions:
+            create_new: Add New Project
+            reorder: Reorder Projects
+            reorder_done: Done Reordering Projects
+          records:
+            title: Projects
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Projects yet. Click "Add New Project" to add
+              your first project.
+          project:
+            view_live_html: View this project live <br/><em>(opens in a new window)</em>
+            edit: Edit this project
+            delete: Remove this project forever
         cvs:
           actions:
             create_new: Add New Cv
@@ -13,17 +29,25 @@ en:
           records:
             title: Cvs
             sorry_no_results: Sorry! There are no results found.
-            no_items_yet: There are no Cvs yet. Click "Add New Cv" to add your first cv.
+            no_items_yet: There are no Cvs yet. Click "Add New Cv" to add your first
+              cv.
           cv:
             view_live_html: View this cv live <br/><em>(opens in a new window)</em>
             edit: Edit this cv
             delete: Remove this cv forever
+      projects:
+        show:
+          other: Other Projects
       cvs:
         show:
           other: Other Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title
