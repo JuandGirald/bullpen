@@ -54,4 +54,12 @@
   </aside>
 <% end %>
 
+<ul id="projects">
+    <% @projects.each do |project| %>
+      <li>
+        <%= project.name %>
+      </li>
+    <% end %>
+  </ul>
+
 <%= render '/refinery/content_page' %>

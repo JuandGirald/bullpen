@@ -3,6 +3,11 @@
               :object => @project,
               :include_object_name => true %>
 
+  <div class="field">
+    <%= f.label :developer -%>
+    <%= f.select(:cv_id, @cvs.collect {|d| [d.name, d.id] })%>
+  </div>
+
   <div class='field'>
     <%= f.label :name -%>
     <%= f.text_field :name, :class => 'larger widest' -%>
