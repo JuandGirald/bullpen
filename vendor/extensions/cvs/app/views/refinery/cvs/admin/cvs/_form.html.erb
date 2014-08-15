@@ -1,0 +1,54 @@
+<%= form_for [refinery, :cvs_admin, @cv] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @cv,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:profile],
+                :object => "cvs/cv" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :stackoverflow_reputation -%>
+    <%= f.number_field :stackoverflow_reputation -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog -%>
+    <%= f.text_field :blog -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @cv.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.cvs.admin.cvs.cv'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @cv.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

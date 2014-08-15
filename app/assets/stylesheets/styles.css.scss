@@ -1,5 +1,13 @@
+// Home Styles
+
+#home-page {
+  #page {
+    background: gainsboro;
+  }
+}
+
 body {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Helvetica;
   font-size: 16px;
   margin: 0;
 }
@@ -32,6 +40,11 @@ header {
   #logo {
     margin: 0;
     font-size: 24px;
+  }
+  .first {
+    ul {
+      display: none;
+    }
   }
   a {
     color: #FFF;
@@ -70,6 +83,47 @@ header {
     p {
       color: #777;
       font-size: 14px;
+    }
+    img{
+      -webkit-border-radius: 13em;
+      -moz-border-radius: 13em;
+      border-radius: 13em;
+    }
+  }
+}
+
+.devs {
+  margin-top: 3em;
+  .span4:hover {
+    opacity: 1;
+  }
+  .span4 {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    opacity: 0.6;
+    p {
+      margin-left: 1em;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+    .info {
+      background: rgb(85, 218, 33);
+      border: 1px solid rgb(85, 218, 33);
+      border-radius: 0.5em;
+      color: white;
+      float: right;
+      margin-right: 1em;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      text-align: center;
+      width: 3em;
+      p {
+        margin: 0
+      }
     }
   }
 }

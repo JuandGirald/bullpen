@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      cvs:
+        title: Cvs
+    cvs:
+      admin:
+        cvs:
+          actions:
+            create_new: Add New Cv
+            reorder: Reorder Cvs
+            reorder_done: Done Reordering Cvs
+          records:
+            title: Cvs
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Cvs yet. Click "Add New Cv" to add your first cv.
+          cv:
+            view_live_html: View this cv live <br/><em>(opens in a new window)</em>
+            edit: Edit this cv
+            delete: Remove this cv forever
+      cvs:
+        show:
+          other: Other Cvs
+  activerecord:
+    attributes:
+      'refinery/cvs/cv':
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow Reputation
+        blog: Blog
+        photo: Photo

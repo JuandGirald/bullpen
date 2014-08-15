@@ -74,6 +74,13 @@ GIT
       dragonfly-s3_data_store (~> 1.0.0)
       refinerycms-core (= 3.0.0)
 
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-cvs (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -281,6 +288,11 @@ GEM
     truncate_html (0.9.2)
     turbolinks (2.2.2)
       coffee-rails
+    twitter-bootstrap-rails (2.2.8)
+      actionpack (>= 3.1)
+      execjs
+      rails (>= 3.1)
+      railties (>= 3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.5.3)
@@ -302,6 +314,7 @@ DEPENDENCIES
   rails (= 4.1.4)
   refinerycms!
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
+  refinerycms-cvs!
   refinerycms-i18n!
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   sass-rails (~> 4.0.3)
@@ -310,4 +323,5 @@ DEPENDENCIES
   spring
   sqlite3
   turbolinks
+  twitter-bootstrap-rails
   uglifier (>= 1.3.0)
