@@ -1,12 +1,29 @@
 cs:
   refinery:
     plugins:
+      experiences:
+        title: Experiences
       projects:
         title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        experiences:
+          actions:
+            create_new: Přidat Experience
+            reorder: Řadit Experiences
+            reorder_done: Konec řazení Experiences
+          records:
+            title: Experiences
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Experiences. Zvolte "Přidat
+              Experience" pro přidání prvního experience.
+          experience:
+            view_live_html: Zobrazit náhled experience<br/><em>(otevře se v novém
+              okně)</em>
+            edit: Upravit experience
+            delete: Smazat experience
         projects:
           actions:
             create_new: Přidat Project
@@ -35,6 +52,9 @@ cs:
             view_live_html: Zobrazit náhled cv<br/><em>(otevře se v novém okně)</em>
             edit: Upravit cv
             delete: Smazat cv
+      experiences:
+        show:
+          other: Další Experiences
       projects:
         show:
           other: Další Projects
@@ -43,6 +63,10 @@ cs:
           other: Další Cvs
   activerecord:
     attributes:
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
       refinery/cvs/project:
         name: Name
         url: Url

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="experiences">
+    <% @experiences.each do |experience| %>
+      <li>
+        <%= link_to experience, refinery.cvs_experience_path(experience) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

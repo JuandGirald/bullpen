@@ -1,11 +1,11 @@
 module Refinery
   module Cvs
     module Admin
-      class ProjectsController < ::Refinery::AdminController
+      class ExperiencesController < ::Refinery::AdminController
 
         before_filter :find_all_cvs, :only => [:show, :new, :edit]
 
-        crudify :'refinery/cvs/project',
+        crudify :'refinery/cvs/experience',
                 :title_attribute => 'name',
                 :xhr_paging => true
 
@@ -14,10 +14,9 @@ module Refinery
             @cvs = Refinery::Cvs::Cv.all
           end
 
-          def project_params
-            params.require(:project).permit(:name, :url, :description, :position)
+          def experience_params
+            params.require(:experience).permit(:name, :years, :position)
           end
-
       end
     end
   end

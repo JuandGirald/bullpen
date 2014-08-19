@@ -1,12 +1,27 @@
 zh-CN:
   refinery:
     plugins:
+      experiences:
+        title: Experiences
       projects:
         title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        experiences:
+          actions:
+            create_new: 建立新的 Experience
+            reorder: 对 Experiences 重新排序
+            reorder_done: 对 Experiences 的重新排序结束
+          records:
+            title: Experiences
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Experiences . 点击 "Add New Experience" 创建一个experience.
+          experience:
+            view_live_html: 查看 experience 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 experience
+            delete: 永久删除 experience
         projects:
           actions:
             create_new: 建立新的 Project
@@ -33,6 +48,9 @@ zh-CN:
             view_live_html: 查看 cv 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 cv
             delete: 永久删除 cv
+      experiences:
+        show:
+          other: 其他 Experiences
       projects:
         show:
           other: 其他 Projects
@@ -41,6 +59,10 @@ zh-CN:
           other: 其他 Cvs
   activerecord:
     attributes:
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
       refinery/cvs/project:
         name: Name
         url: Url

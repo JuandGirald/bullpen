@@ -1,7 +1,96 @@
 // Cv Styles
 
-#cv {
+#cvs-page {
+  #page {
+    .container {
+      background-color: #E7E6E6;
+      color: #4b4b4b;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+    }
+  }
   #body_content {
     margin-top: 2em;
   }
+}
+
+.name{
+    height: 200px;
+    font-size: 130px;
+    text-align: right;
+    padding-top: 40px;
+    font-weight: bold;
+    font-family: "Droid Serif", serif;
+    color: black;
+}
+.profile{
+}
+.projects{
+}
+.projects .projectName{
+    color: #727272;
+    font-size: 30px;
+    font-family: "Droid Serif", serif;
+}
+.projects .projectUrl{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.projects .projectInteresting{
+    list-style-type: square;
+}
+
+
+.open-source{
+}
+.practices{
+}
+.education{
+}
+
+.title{
+    color: #727272;
+    font-size: 48px;
+    font-family: "Droid Serif", serif;
+    line-height: 50px;
+}
+.toolbox{
+}
+.picture{
+    height: 300px;
+}
+.rightPart{
+    height: 100%;
+    padding-left: 50px !important;
+}
+.leftPart{
+    border-right: 6px dashed #D57B1A;
+    height: 100%;
+    padding-right: 60px !important;
+    padding-left: 40px !important;
+}
+
+.sectionTitle {
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #D57B1A !important;
+    font-family: "Droid Serif", serif !important;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.sectionContent{
+    padding-left: 30px;
+}
+.section {
+    text-align: justify;
+}
+
+.logo img{
+    width: 230px;
+    height: 230px;
+}
+
+.cv {
 }

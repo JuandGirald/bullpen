@@ -1,12 +1,29 @@
 nb:
   refinery:
     plugins:
+      experiences:
+        title: Experiences
       projects:
         title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        experiences:
+          actions:
+            create_new: Lag en ny Experience
+            reorder: Endre rekkefølgen på Experiences
+            reorder_done: Ferdig å endre rekkefølgen Experiences
+          records:
+            title: Experiences
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Experiences enda. Klikk på "Lag en ny Experience"
+              for å legge til din første experience.
+          experience:
+            view_live_html: Vis hvordan denne experience ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne experience
+            delete: Fjern denne experience permanent
         projects:
           actions:
             create_new: Lag en ny Project
@@ -37,6 +54,9 @@ nb:
               i et nytt vindu)</em>
             edit: Rediger denne cv
             delete: Fjern denne cv permanent
+      experiences:
+        show:
+          other: Andre Experiences
       projects:
         show:
           other: Andre Projects
@@ -45,6 +65,10 @@ nb:
           other: Andre Cvs
   activerecord:
     attributes:
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
       refinery/cvs/project:
         name: Name
         url: Url

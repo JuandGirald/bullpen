@@ -1,12 +1,29 @@
 fr:
   refinery:
     plugins:
+      experiences:
+        title: Experiences
       projects:
         title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        experiences:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Experience
+            reorder: Réordonner les Experiences
+            reorder_done: Fin de réordonnancement des Experiences
+          records:
+            title: Experiences
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Experience. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Experience" pour créer votre premi(er/ère) experience.
+          experience:
+            view_live_html: Voir ce(t/tte) experience <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) experience
+            delete: Supprimer définitivement ce(t/tte) experience
         projects:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Project
@@ -35,6 +52,9 @@ fr:
             view_live_html: Voir ce(t/tte) cv <br/><em>(Ouvre une nouvelle fenêtre)</em>
             edit: Modifier ce(t/tte) cv
             delete: Supprimer définitivement ce(t/tte) cv
+      experiences:
+        show:
+          other: Autres Experiences
       projects:
         show:
           other: Autres Projects
@@ -43,6 +63,10 @@ fr:
           other: Autres Cvs
   activerecord:
     attributes:
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
       refinery/cvs/project:
         name: Name
         url: Url

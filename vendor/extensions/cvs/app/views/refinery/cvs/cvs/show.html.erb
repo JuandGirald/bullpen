@@ -1,65 +1,81 @@
-<% content_for :body_content_title do %>
-  <%= @cv.name %>
-<% end %>
 
-<% content_for :body do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @cv.name %>
-    </p>
-  </section>
-  <section>
-    <h1>Profile</h1>
-    <p>
-      <%=raw @cv.profile %>
-    </p>
-  </section>
-  <section>
-    <h1>Title</h1>
-    <p>
-      <%=raw @cv.title %>
-    </p>
-  </section>
-  <section>
-    <h1>Stackoverflow Reputation</h1>
-    <p>
-      <%=raw @cv.stackoverflow_reputation %>
-    </p>
-  </section>
-  <section>
-    <h1>Blog</h1>
-    <p>
-      <%=raw @cv.blog %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo</h1>
-    <p>
-      <%= image_fu @cv.photo, nil %>
-    </p>
-  </section>
-<% end %>
+<div class="container">
+  
+  <% content_for :body_content_title do %>
+    <%= @cv.name %>
+  <% end %>
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="cvs">
-      <% @cvs.each do |cv| %>
-        <li>
-          <%= link_to cv.name, refinery.cvs_cv_path(cv) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
+  <% content_for :body do %>
+    <section class="name">
+      <p> <%=raw @cv.name %> </p>
+    </section>
+    <section>
+      <h1>Profile</h1>
+      <p>
+        <%=raw @cv.profile %>
+      </p>
+    </section>
 
-<ul id="projects">
-    <% @projects.each do |project| %>
-      <li>
-        <%= project.name %>
-      </li>
-    <% end %>
-  </ul>
+    <div class="row projects">
+      <ul >
+        <h1> Recent Work Experience </h1>
+        <% @projects.each do |project| %>
+          <li>
+            <%= project.name %>
+            <%= project.description %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="row projects">
+      <ul >
+        <% @experiences.each do |experience| %>
+          <li>
+            <%= experience.name %> : <%= experience.years %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <section>
+      <h1>Title</h1>
+      <p>
+        <%=raw @cv.title %>
+      </p>
+    </section>
+    <section>
+      <h1>Stackoverflow Reputation</h1>
+      <p>
+        <%=raw @cv.stackoverflow_reputation %>
+      </p>
+    </section>
+    <section>
+      <h1>Blog</h1>
+      <p>
+        <%=raw @cv.blog %>
+      </p>
+    </section>
+    <section>
+      <h1>Photo</h1>
+      <p>
+        <%= image_fu @cv.photo, nil %>
+      </p>
+    </section>
+  <% end %>  
 
-<%= render '/refinery/content_page' %>
+
+  <% content_for :side_body do %>
+    <aside>
+      <h2><%= t('.other') %></h2>
+      <ul id="cvs">
+        <% @cvs.each do |cv| %>
+          <li>
+            <%= link_to cv.name, refinery.cvs_cv_path(cv) %>
+          </li>
+        <% end %>
+      </ul>
+    </aside>
+  <% end %>
+
+  <%= render '/refinery/content_page' %>
+  
+</div>

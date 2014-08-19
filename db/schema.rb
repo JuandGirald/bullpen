@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815211610) do
+ActiveRecord::Schema.define(version: 20140819161141) do
 
   create_table "refinery_cvs", force: true do |t|
     t.string   "name"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 20140815211610) do
     t.integer  "stackoverflow_reputation"
     t.string   "blog"
     t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refinery_cvs_experiences", force: true do |t|
+    t.text     "name"
+    t.integer  "years"
+    t.integer  "cv_id"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"

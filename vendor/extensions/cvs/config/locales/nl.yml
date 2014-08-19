@@ -1,12 +1,29 @@
 nl:
   refinery:
     plugins:
+      experiences:
+        title: Experiences
       projects:
         title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        experiences:
+          actions:
+            create_new: Nieuwe Experience toevoegen
+            reorder: De volgorde van de Experiences wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Experience-volgorde
+          records:
+            title: Experiences
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Experiences. Druk op 'Nieuwe Experience
+              toevoegen' om de eerste toe te voegen.
+          experience:
+            view_live_html: Deze experience op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze experience
+            delete: Deze experience definitief verwijderen
         projects:
           actions:
             create_new: Nieuwe Project toevoegen
@@ -37,6 +54,9 @@ nl:
               nieuw venster)</em>
             edit: Bewerk deze cv
             delete: Deze cv definitief verwijderen
+      experiences:
+        show:
+          other: Andere Experiences
       projects:
         show:
           other: Andere Projects
@@ -45,6 +65,10 @@ nl:
           other: Andere Cvs
   activerecord:
     attributes:
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
       refinery/cvs/project:
         name: Name
         url: Url
