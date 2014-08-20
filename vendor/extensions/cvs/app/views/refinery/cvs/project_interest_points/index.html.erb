@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="project_interest_points">
+    <% @project_interest_points.each do |project_interest_point| %>
+      <li>
+        <%= link_to project_interest_point.content, refinery.cvs_project_interest_point_path(project_interest_point) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

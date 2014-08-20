@@ -1,6 +1,8 @@
 es:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
       educations:
         title: Educations
       languages:
@@ -15,6 +17,22 @@ es:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Crear nuevo project interest point
+            reorder: Reordenar project interest points
+            reorder_done: Reordenación de project interest points completada
+          records:
+            title: Project Interest Points
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay project interest points todavía. Pulsa en "Crear
+              nuevo Project Interest Point" para crear tu primer project interest
+              point.
+          project_interest_point:
+            view_live_html: Ver este project interest point como abierto al público
+              <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este project interest point
+            delete: Borrar este project interest point para siempre
         educations:
           actions:
             create_new: Crear nuevo education
@@ -105,6 +123,9 @@ es:
               ventana nueva)</em>
             edit: Editar este cv
             delete: Borrar este cv para siempre
+      project_interest_points:
+        show:
+          other: Otros project interest points
       educations:
         show:
           other: Otros educations
@@ -125,6 +146,9 @@ es:
           other: Otros cvs
   activerecord:
     attributes:
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
       refinery/cvs/education:
         title: Title
         institution: Institution

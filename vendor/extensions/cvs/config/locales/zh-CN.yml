@@ -1,6 +1,8 @@
 zh-CN:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
       educations:
         title: Educations
       languages:
@@ -15,6 +17,20 @@ zh-CN:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: 建立新的 Project Interest Point
+            reorder: 对 Project Interest Points 重新排序
+            reorder_done: 对 Project Interest Points 的重新排序结束
+          records:
+            title: Project Interest Points
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Project Interest Points . 点击 "Add New Project Interest
+              Point" 创建一个project interest point.
+          project_interest_point:
+            view_live_html: 查看 project interest point 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 project interest point
+            delete: 永久删除 project interest point
         educations:
           actions:
             create_new: 建立新的 Education
@@ -93,6 +109,9 @@ zh-CN:
             view_live_html: 查看 cv 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 cv
             delete: 永久删除 cv
+      project_interest_points:
+        show:
+          other: 其他 Project Interest Points
       educations:
         show:
           other: 其他 Educations
@@ -113,6 +132,9 @@ zh-CN:
           other: 其他 Cvs
   activerecord:
     attributes:
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
       refinery/cvs/education:
         title: Title
         institution: Institution

@@ -1,6 +1,8 @@
 tr:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
       educations:
         title: Educations
       languages:
@@ -15,6 +17,21 @@ tr:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Yeni Ekle Project Interest Point
+            reorder: Tekrar sirala Project Interest Points
+            reorder_done: Tekrar siralama tamamlandiProject Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Project Interest Points yok henuz.  Tikla "Yeni
+              Ekle Project Interest Point" eklemek senin ilk project interest point.
+          project_interest_point:
+            view_live_html: Bunu canlu project interest point goruntule <br/><em>(yeni
+              bir pencerede acar)</em>
+            edit: Bunu Duzenle project interest point
+            delete: Bunu Sil project interest point sonsuza dek
         educations:
           actions:
             create_new: Yeni Ekle Education
@@ -104,6 +121,9 @@ tr:
             view_live_html: Bunu canlu cv goruntule <br/><em>(yeni bir pencerede acar)</em>
             edit: Bunu Duzenle cv
             delete: Bunu Sil cv sonsuza dek
+      project_interest_points:
+        show:
+          other: Diger Project Interest Points
       educations:
         show:
           other: Diger Educations
@@ -124,6 +144,9 @@ tr:
           other: Diger Cvs
   activerecord:
     attributes:
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
       refinery/cvs/education:
         title: Title
         institution: Institution

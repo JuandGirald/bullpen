@@ -1,11 +1,12 @@
 module Refinery
   module Cvs
-    class Education < Refinery::Core::BaseModel
+    class ProjectInterestPoint < Refinery::Core::BaseModel
 
-      validates :title, :presence => true
-      validates :cv_id, :presence => true
 
-      belongs_to :cv
+      validates :content,    :presence => true
+      validates :project_id, :presence => true
+
+      belongs_to :project
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       #

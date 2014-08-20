@@ -1,6 +1,8 @@
 sk:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
       educations:
         title: Educations
       languages:
@@ -15,6 +17,22 @@ sk:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Pridať Project Interest Point
+            reorder: Preusporiadať Project Interest Points
+            reorder_done: Koniec radenia Project Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Project Interest Points. Kliknite
+              na "Pridať Project Interest Point" pre pridanie prvého project interest
+              point.
+          project_interest_point:
+            view_live_html: Zobraziť náhľad project interest point<br/><em>(otvorí
+              sa v novom okne)</em>
+            edit: Upraviť project interest point
+            delete: Zmazať project interest point
         educations:
           actions:
             create_new: Pridať Education
@@ -100,6 +118,9 @@ sk:
             view_live_html: Zobraziť náhľad cv<br/><em>(otvorí sa v novom okne)</em>
             edit: Upraviť cv
             delete: Zmazať cv
+      project_interest_points:
+        show:
+          other: Daľšie Project Interest Points
       educations:
         show:
           other: Daľšie Educations
@@ -120,6 +141,9 @@ sk:
           other: Daľšie Cvs
   activerecord:
     attributes:
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
       refinery/cvs/education:
         title: Title
         institution: Institution

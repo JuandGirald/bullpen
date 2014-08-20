@@ -2,7 +2,7 @@ Refinery::Core::Engine.routes.draw do
 
   # Frontend routes
   namespace :cvs do
-    resources :cvs, :path => '', :only => [:index, :show]
+    resources :cvs, :path => '', :only => [:index, :show, :new, :edit]
   end
 
   # Admin routes
@@ -94,6 +94,23 @@ Refinery::Core::Engine.routes.draw do
   namespace :cvs, :path => '' do
     namespace :admin, :path => "#{Refinery::Core.backend_route}/cvs" do
       resources :educations, :except => :show do
+        collection do
+          post :update_positions
+        end
+      end
+    end
+  end
+
+
+  # Frontend routes
+  namespace :cvs do
+    resources :project_interest_points, :only => [:index, :show]
+  end
+
+  # Admin routes
+  namespace :cvs, :path => '' do
+    namespace :admin, :path => "#{Refinery::Core.backend_route}/cvs" do
+      resources :project_interest_points, :except => :show do
         collection do
           post :update_positions
         end

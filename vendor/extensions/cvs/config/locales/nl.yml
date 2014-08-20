@@ -1,6 +1,8 @@
 nl:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
       educations:
         title: Educations
       languages:
@@ -15,6 +17,21 @@ nl:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Nieuwe Project Interest Point toevoegen
+            reorder: De volgorde van de Project Interest Points wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Project Interest Point-volgorde
+          records:
+            title: Project Interest Points
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Project Interest Points. Druk op 'Nieuwe
+              Project Interest Point toevoegen' om de eerste toe te voegen.
+          project_interest_point:
+            view_live_html: Deze project interest point op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze project interest point
+            delete: Deze project interest point definitief verwijderen
         educations:
           actions:
             create_new: Nieuwe Education toevoegen
@@ -105,6 +122,9 @@ nl:
               nieuw venster)</em>
             edit: Bewerk deze cv
             delete: Deze cv definitief verwijderen
+      project_interest_points:
+        show:
+          other: Andere Project Interest Points
       educations:
         show:
           other: Andere Educations
@@ -125,6 +145,9 @@ nl:
           other: Andere Cvs
   activerecord:
     attributes:
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
       refinery/cvs/education:
         title: Title
         institution: Institution

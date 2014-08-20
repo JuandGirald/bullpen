@@ -1,6 +1,8 @@
 nb:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
       educations:
         title: Educations
       languages:
@@ -15,6 +17,22 @@ nb:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Lag en ny Project Interest Point
+            reorder: Endre rekkefølgen på Project Interest Points
+            reorder_done: Ferdig å endre rekkefølgen Project Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Project Interest Points enda. Klikk på "Lag
+              en ny Project Interest Point" for å legge til din første project interest
+              point.
+          project_interest_point:
+            view_live_html: Vis hvordan denne project interest point ser ut offentlig
+              <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne project interest point
+            delete: Fjern denne project interest point permanent
         educations:
           actions:
             create_new: Lag en ny Education
@@ -105,6 +123,9 @@ nb:
               i et nytt vindu)</em>
             edit: Rediger denne cv
             delete: Fjern denne cv permanent
+      project_interest_points:
+        show:
+          other: Andre Project Interest Points
       educations:
         show:
           other: Andre Educations
@@ -125,6 +146,9 @@ nb:
           other: Andre Cvs
   activerecord:
     attributes:
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
       refinery/cvs/education:
         title: Title
         institution: Institution

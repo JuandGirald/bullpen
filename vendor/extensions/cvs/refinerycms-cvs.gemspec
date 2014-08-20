@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-cvs'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Cvs extension for Refinery CMS'
-  s.date              = '2014-08-19'
+  s.date              = '2014-08-20'
   s.summary           = 'Cvs extension for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
