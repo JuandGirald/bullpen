@@ -12,9 +12,12 @@ module Refinery
       end
 
       def show
-        @cv = Cv.find(params[:id])
-        @projects = Project.where(cv_id=@cv.id)
-        @experiences = Experience.where(cv_id=@cv.id)
+        @cv          =  Cv.find(params[:id])
+        @projects    =  Project.where(cv_id: @cv.id)
+        @experiences =  Experience.where(cv_id: @cv.id)
+        @educations  =  Education.where(cv_id: @cv.id)
+        @skills      =  Skill.where(cv_id: @cv.id)
+        @languages   =  Language.where(cv_id: @cv_id)
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @cv in the line below:

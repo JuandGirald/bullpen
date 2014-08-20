@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140819161141) do
+ActiveRecord::Schema.define(version: 20140819190635) do
 
   create_table "refinery_cvs", force: true do |t|
     t.string   "name"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 20140819161141) do
     t.integer  "stackoverflow_reputation"
     t.string   "blog"
     t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refinery_cvs_educations", force: true do |t|
+    t.string   "title"
+    t.string   "institution"
+    t.integer  "cv_id"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -34,6 +43,15 @@ ActiveRecord::Schema.define(version: 20140819161141) do
     t.datetime "updated_at"
   end
 
+  create_table "refinery_cvs_languages", force: true do |t|
+    t.string   "name"
+    t.integer  "level"
+    t.integer  "cv_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "refinery_cvs_projects", force: true do |t|
     t.string   "name"
     t.string   "url"
@@ -42,6 +60,14 @@ ActiveRecord::Schema.define(version: 20140819161141) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "cv_id"
+  end
+
+  create_table "refinery_cvs_skills", force: true do |t|
+    t.string   "name"
+    t.integer  "cv_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "refinery_images", force: true do |t|

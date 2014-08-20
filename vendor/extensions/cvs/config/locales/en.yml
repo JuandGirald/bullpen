@@ -1,6 +1,12 @@
 en:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,48 @@ en:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: Add New Education
+            reorder: Reorder Educations
+            reorder_done: Done Reordering Educations
+          records:
+            title: Educations
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Educations yet. Click "Add New Education" to
+              add your first education.
+          education:
+            view_live_html: View this education live <br/><em>(opens in a new window)</em>
+            edit: Edit this education
+            delete: Remove this education forever
+        languages:
+          actions:
+            create_new: Add New Language
+            reorder: Reorder Languages
+            reorder_done: Done Reordering Languages
+          records:
+            title: Languages
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Languages yet. Click "Add New Language" to
+              add your first language.
+          language:
+            view_live_html: View this language live <br/><em>(opens in a new window)</em>
+            edit: Edit this language
+            delete: Remove this language forever
+        skills:
+          actions:
+            create_new: Add New Skill
+            reorder: Reorder Skills
+            reorder_done: Done Reordering Skills
+          records:
+            title: Skills
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Skills yet. Click "Add New Skill" to add your
+              first skill.
+          skill:
+            view_live_html: View this skill live <br/><em>(opens in a new window)</em>
+            edit: Edit this skill
+            delete: Remove this skill forever
         experiences:
           actions:
             create_new: Add New Experience
@@ -51,6 +99,15 @@ en:
             view_live_html: View this cv live <br/><em>(opens in a new window)</em>
             edit: Edit this cv
             delete: Remove this cv forever
+      educations:
+        show:
+          other: Other Educations
+      languages:
+        show:
+          other: Other Languages
+      skills:
+        show:
+          other: Other Skills
       experiences:
         show:
           other: Other Experiences
@@ -62,6 +119,17 @@ en:
           other: Other Cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years

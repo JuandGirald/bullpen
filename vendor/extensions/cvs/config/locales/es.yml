@@ -1,6 +1,12 @@
 es:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,51 @@ es:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: Crear nuevo education
+            reorder: Reordenar educations
+            reorder_done: Reordenación de educations completada
+          records:
+            title: Educations
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay educations todavía. Pulsa en "Crear nuevo Education"
+              para crear tu primer education.
+          education:
+            view_live_html: Ver este education como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este education
+            delete: Borrar este education para siempre
+        languages:
+          actions:
+            create_new: Crear nuevo language
+            reorder: Reordenar languages
+            reorder_done: Reordenación de languages completada
+          records:
+            title: Languages
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay languages todavía. Pulsa en "Crear nuevo Language"
+              para crear tu primer language.
+          language:
+            view_live_html: Ver este language como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este language
+            delete: Borrar este language para siempre
+        skills:
+          actions:
+            create_new: Crear nuevo skill
+            reorder: Reordenar skills
+            reorder_done: Reordenación de skills completada
+          records:
+            title: Skills
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay skills todavía. Pulsa en "Crear nuevo Skill" para
+              crear tu primer skill.
+          skill:
+            view_live_html: Ver este skill como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este skill
+            delete: Borrar este skill para siempre
         experiences:
           actions:
             create_new: Crear nuevo experience
@@ -54,6 +105,15 @@ es:
               ventana nueva)</em>
             edit: Editar este cv
             delete: Borrar este cv para siempre
+      educations:
+        show:
+          other: Otros educations
+      languages:
+        show:
+          other: Otros languages
+      skills:
+        show:
+          other: Otros skills
       experiences:
         show:
           other: Otros experiences
@@ -65,6 +125,17 @@ es:
           other: Otros cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years

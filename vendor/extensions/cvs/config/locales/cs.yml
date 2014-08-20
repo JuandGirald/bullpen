@@ -1,6 +1,12 @@
 cs:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,48 @@ cs:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: Přidat Education
+            reorder: Řadit Educations
+            reorder_done: Konec řazení Educations
+          records:
+            title: Educations
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Educations. Zvolte "Přidat
+              Education" pro přidání prvního education.
+          education:
+            view_live_html: Zobrazit náhled education<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit education
+            delete: Smazat education
+        languages:
+          actions:
+            create_new: Přidat Language
+            reorder: Řadit Languages
+            reorder_done: Konec řazení Languages
+          records:
+            title: Languages
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Languages. Zvolte "Přidat Language"
+              pro přidání prvního language.
+          language:
+            view_live_html: Zobrazit náhled language<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit language
+            delete: Smazat language
+        skills:
+          actions:
+            create_new: Přidat Skill
+            reorder: Řadit Skills
+            reorder_done: Konec řazení Skills
+          records:
+            title: Skills
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Skills. Zvolte "Přidat Skill"
+              pro přidání prvního skill.
+          skill:
+            view_live_html: Zobrazit náhled skill<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit skill
+            delete: Smazat skill
         experiences:
           actions:
             create_new: Přidat Experience
@@ -52,6 +100,15 @@ cs:
             view_live_html: Zobrazit náhled cv<br/><em>(otevře se v novém okně)</em>
             edit: Upravit cv
             delete: Smazat cv
+      educations:
+        show:
+          other: Další Educations
+      languages:
+        show:
+          other: Další Languages
+      skills:
+        show:
+          other: Další Skills
       experiences:
         show:
           other: Další Experiences
@@ -63,6 +120,17 @@ cs:
           other: Další Cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years

@@ -7,6 +7,11 @@
       color: #4b4b4b;
       font-family: "Open Sans", sans-serif;
       font-size: 18px;
+      h1 {
+        color: #D57B1A;
+        font-size: 2.5em;
+        text-align: left;
+      }
     }
   }
   #body_content {
@@ -15,17 +20,37 @@
 }
 
 .name{
-    height: 200px;
-    font-size: 130px;
-    text-align: right;
-    padding-top: 40px;
-    font-weight: bold;
+  margin-top: 2em;
+  h1 {
+    color: black !important;
+    font-size: 130px !important;
+    height: 120px;
+    margin-right: 0.4em;
     font-family: "Droid Serif", serif;
-    color: black;
+    font-weight: bold;
+    text-align: right !important;
+    padding-top: 40px;
+  }
 }
 .profile{
+  margin: 0 3em;
+  h1{
+    font-size: 2.5em;
+  }
+  p {
+    margin-left: 25px;
+    margin-top: 2em;
+    text-align: justify;
+  }
 }
 .projects{
+  margin: 0 3em;
+  margin-bottom: 2em;
+  h3 {
+    color: #727272 !important;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
 }
 .projects .projectName{
     color: #727272;
@@ -46,29 +71,63 @@
 }
 .practices{
 }
+
+.experiences {
+  color: black !important;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 2em;
+  text-align: left;
+}
 .education{
+  margin-top: 2em;
+  p{
+    color: #D57B1A !important;
+  }
+}
+
+.skill {
+  margin-bottom: 4em;
+  margin-top: 2em;
+  p {
+    float: left;
+    margin-right: 5px;
+    position: relative;
+  }
+}
+
+.photo {
+  margin-top: 2em;
+  text-align: center;
+  img {
+    width: 70%;
+    -webkit-border-radius: 7em;
+    -moz-border-radius: 7em;
+    border-radius: 7em;
+  }
 }
 
 .title{
-    color: #727272;
-    font-size: 48px;
-    font-family: "Droid Serif", serif;
-    line-height: 50px;
+  color: #727272;
+  font-size: 2.5em;
+  font-family: "Droid Serif", serif;
+  text-align: center;
+  line-height: 50px;
 }
 .toolbox{
 }
-.picture{
-    height: 300px;
-}
+
 .rightPart{
-    height: 100%;
-    padding-left: 50px !important;
+  h1{
+    font-size: 2em !important;  
+  }
 }
+
 .leftPart{
-    border-right: 6px dashed #D57B1A;
-    height: 100%;
-    padding-right: 60px !important;
-    padding-left: 40px !important;
+    border-right: 4px dashed #D57B1A;
+    // border-style: none dashed none none;
+    margin-bottom: -30px;
+    margin-top: 10px;
 }
 
 .sectionTitle {
@@ -85,11 +144,6 @@
 }
 .section {
     text-align: justify;
-}
-
-.logo img{
-    width: 230px;
-    height: 230px;
 }
 
 .cv {

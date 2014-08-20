@@ -1,3 +1,6 @@
 require 'refinery/cvs'
 require 'refinery/projects'
 require 'refinery/experiences'
+require 'refinery/skills'
+require 'refinery/languages'
+require 'refinery/educations'

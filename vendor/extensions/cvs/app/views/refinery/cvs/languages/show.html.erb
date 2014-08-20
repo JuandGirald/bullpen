@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @language.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @language.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Level</h1>
+    <p>
+      <%=raw @language.level %>
+    </p>
+  </section>
+  <section>
+    <h1>Cv</h1>
+    <p>
+      <%=raw @language.cv_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="languages">
+      <% @languages.each do |language| %>
+        <li>
+          <%= link_to language.name, refinery.cvs_language_path(language) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

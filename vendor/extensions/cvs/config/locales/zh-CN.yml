@@ -1,6 +1,12 @@
 zh-CN:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,45 @@ zh-CN:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: 建立新的 Education
+            reorder: 对 Educations 重新排序
+            reorder_done: 对 Educations 的重新排序结束
+          records:
+            title: Educations
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Educations . 点击 "Add New Education" 创建一个education.
+          education:
+            view_live_html: 查看 education 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 education
+            delete: 永久删除 education
+        languages:
+          actions:
+            create_new: 建立新的 Language
+            reorder: 对 Languages 重新排序
+            reorder_done: 对 Languages 的重新排序结束
+          records:
+            title: Languages
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Languages . 点击 "Add New Language" 创建一个language.
+          language:
+            view_live_html: 查看 language 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 language
+            delete: 永久删除 language
+        skills:
+          actions:
+            create_new: 建立新的 Skill
+            reorder: 对 Skills 重新排序
+            reorder_done: 对 Skills 的重新排序结束
+          records:
+            title: Skills
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Skills . 点击 "Add New Skill" 创建一个skill.
+          skill:
+            view_live_html: 查看 skill 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 skill
+            delete: 永久删除 skill
         experiences:
           actions:
             create_new: 建立新的 Experience
@@ -48,6 +93,15 @@ zh-CN:
             view_live_html: 查看 cv 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 cv
             delete: 永久删除 cv
+      educations:
+        show:
+          other: 其他 Educations
+      languages:
+        show:
+          other: 其他 Languages
+      skills:
+        show:
+          other: 其他 Skills
       experiences:
         show:
           other: 其他 Experiences
@@ -59,6 +113,17 @@ zh-CN:
           other: 其他 Cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years

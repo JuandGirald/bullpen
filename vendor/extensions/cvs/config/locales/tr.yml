@@ -1,6 +1,12 @@
 tr:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,51 @@ tr:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: Yeni Ekle Education
+            reorder: Tekrar sirala Educations
+            reorder_done: Tekrar siralama tamamlandiEducations
+          records:
+            title: Educations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Educations yok henuz.  Tikla "Yeni Ekle Education"
+              eklemek senin ilk education.
+          education:
+            view_live_html: Bunu canlu education goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle education
+            delete: Bunu Sil education sonsuza dek
+        languages:
+          actions:
+            create_new: Yeni Ekle Language
+            reorder: Tekrar sirala Languages
+            reorder_done: Tekrar siralama tamamlandiLanguages
+          records:
+            title: Languages
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Languages yok henuz.  Tikla "Yeni Ekle Language"
+              eklemek senin ilk language.
+          language:
+            view_live_html: Bunu canlu language goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle language
+            delete: Bunu Sil language sonsuza dek
+        skills:
+          actions:
+            create_new: Yeni Ekle Skill
+            reorder: Tekrar sirala Skills
+            reorder_done: Tekrar siralama tamamlandiSkills
+          records:
+            title: Skills
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Skills yok henuz.  Tikla "Yeni Ekle Skill"
+              eklemek senin ilk skill.
+          skill:
+            view_live_html: Bunu canlu skill goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle skill
+            delete: Bunu Sil skill sonsuza dek
         experiences:
           actions:
             create_new: Yeni Ekle Experience
@@ -53,6 +104,15 @@ tr:
             view_live_html: Bunu canlu cv goruntule <br/><em>(yeni bir pencerede acar)</em>
             edit: Bunu Duzenle cv
             delete: Bunu Sil cv sonsuza dek
+      educations:
+        show:
+          other: Diger Educations
+      languages:
+        show:
+          other: Diger Languages
+      skills:
+        show:
+          other: Diger Skills
       experiences:
         show:
           other: Diger Experiences
@@ -64,6 +124,17 @@ tr:
           other: Diger Cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years

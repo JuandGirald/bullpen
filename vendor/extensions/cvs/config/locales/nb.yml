@@ -1,6 +1,12 @@
 nb:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,51 @@ nb:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: Lag en ny Education
+            reorder: Endre rekkefølgen på Educations
+            reorder_done: Ferdig å endre rekkefølgen Educations
+          records:
+            title: Educations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Educations enda. Klikk på "Lag en ny Education"
+              for å legge til din første education.
+          education:
+            view_live_html: Vis hvordan denne education ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne education
+            delete: Fjern denne education permanent
+        languages:
+          actions:
+            create_new: Lag en ny Language
+            reorder: Endre rekkefølgen på Languages
+            reorder_done: Ferdig å endre rekkefølgen Languages
+          records:
+            title: Languages
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Languages enda. Klikk på "Lag en ny Language"
+              for å legge til din første language.
+          language:
+            view_live_html: Vis hvordan denne language ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne language
+            delete: Fjern denne language permanent
+        skills:
+          actions:
+            create_new: Lag en ny Skill
+            reorder: Endre rekkefølgen på Skills
+            reorder_done: Ferdig å endre rekkefølgen Skills
+          records:
+            title: Skills
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Skills enda. Klikk på "Lag en ny Skill" for
+              å legge til din første skill.
+          skill:
+            view_live_html: Vis hvordan denne skill ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne skill
+            delete: Fjern denne skill permanent
         experiences:
           actions:
             create_new: Lag en ny Experience
@@ -54,6 +105,15 @@ nb:
               i et nytt vindu)</em>
             edit: Rediger denne cv
             delete: Fjern denne cv permanent
+      educations:
+        show:
+          other: Andre Educations
+      languages:
+        show:
+          other: Andre Languages
+      skills:
+        show:
+          other: Andre Skills
       experiences:
         show:
           other: Andre Experiences
@@ -65,6 +125,17 @@ nb:
           other: Andre Cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years

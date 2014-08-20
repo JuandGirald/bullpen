@@ -15,7 +15,7 @@ module Refinery
           end
 
           def project_params
-            params.require(:project).permit(:name, :url, :description, :position)
+            params.require(:project).permit(:name, :url, :description, :cv_id, :position)
           end
 
       end

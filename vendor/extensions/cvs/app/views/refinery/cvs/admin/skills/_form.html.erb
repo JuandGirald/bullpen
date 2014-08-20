@@ -1,0 +1,20 @@
+<%= form_for [refinery, :cvs_admin, @skill] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @skill,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class="field">
+    <%= f.label :developer -%>
+    <%= f.select(:cv_id, @cvs.collect {|d| [d.name, d.id] })%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.skills.admin.skills.skill'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @skill.name) -%>
+<% end -%>

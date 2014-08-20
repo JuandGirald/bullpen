@@ -1,6 +1,6 @@
 <li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(experience) -%>">
   <span class='title'>
-    <%= experience.title %>
+    <%= experience.name %>
 
   </span>
   <span class='actions'>
@@ -14,7 +14,7 @@
     <%= link_to refinery_icon_tag("delete.png"), refinery.cvs_admin_experience_path(experience),
         :class => "cancel confirm-delete",
         :title => t('.delete'),
-        :data => {:confirm => t('message', :scope => 'refinery.admin.delete', :title => experience.title)},
+        :data => {:confirm => t('message', :scope => 'refinery.admin.delete', :title => experience.name)},
         :method => :delete %>
   </span>
 </li>

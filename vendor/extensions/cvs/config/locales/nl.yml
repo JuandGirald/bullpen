@@ -1,6 +1,12 @@
 nl:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,51 @@ nl:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: Nieuwe Education toevoegen
+            reorder: De volgorde van de Educations wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Education-volgorde
+          records:
+            title: Educations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Educations. Druk op 'Nieuwe Education toevoegen'
+              om de eerste toe te voegen.
+          education:
+            view_live_html: Deze education op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze education
+            delete: Deze education definitief verwijderen
+        languages:
+          actions:
+            create_new: Nieuwe Language toevoegen
+            reorder: De volgorde van de Languages wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Language-volgorde
+          records:
+            title: Languages
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Languages. Druk op 'Nieuwe Language toevoegen'
+              om de eerste toe te voegen.
+          language:
+            view_live_html: Deze language op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze language
+            delete: Deze language definitief verwijderen
+        skills:
+          actions:
+            create_new: Nieuwe Skill toevoegen
+            reorder: De volgorde van de Skills wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Skill-volgorde
+          records:
+            title: Skills
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Skills. Druk op 'Nieuwe Skill toevoegen'
+              om de eerste toe te voegen.
+          skill:
+            view_live_html: Deze skill op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
+            edit: Bewerk deze skill
+            delete: Deze skill definitief verwijderen
         experiences:
           actions:
             create_new: Nieuwe Experience toevoegen
@@ -54,6 +105,15 @@ nl:
               nieuw venster)</em>
             edit: Bewerk deze cv
             delete: Deze cv definitief verwijderen
+      educations:
+        show:
+          other: Andere Educations
+      languages:
+        show:
+          other: Andere Languages
+      skills:
+        show:
+          other: Andere Skills
       experiences:
         show:
           other: Andere Experiences
@@ -65,6 +125,17 @@ nl:
           other: Andere Cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years

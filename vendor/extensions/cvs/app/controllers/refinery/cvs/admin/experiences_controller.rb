@@ -15,7 +15,7 @@ module Refinery
           end
 
           def experience_params
-            params.require(:experience).permit(:name, :years, :position)
+            params.require(:experience).permit(:name, :years, :cv_id, :position)
           end
       end
     end

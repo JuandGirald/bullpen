@@ -1,81 +1,78 @@
 
 <div class="container">
-  
+
   <% content_for :body_content_title do %>
     <%= @cv.name %>
   <% end %>
 
-  <% content_for :body do %>
-    <section class="name">
-      <p> <%=raw @cv.name %> </p>
-    </section>
-    <section>
-      <h1>Profile</h1>
-      <p>
-        <%=raw @cv.profile %>
-      </p>
-    </section>
-
-    <div class="row projects">
-      <ul >
-        <h1> Recent Work Experience </h1>
-        <% @projects.each do |project| %>
-          <li>
-            <%= project.name %>
-            <%= project.description %>
-          </li>
-        <% end %>
-      </ul>
+  <div class="row-fluid">
+    <div class="span8 leftPart">
+      <div class="name">
+        <h1> <%=raw @cv.name %> </h1>
+      </div>
+      <div class="profile">
+        <h1> <i class="icon-user"></i> Profile</h1>
+        <p>
+          <%=raw @cv.profile %>
+        </p>
+      </div>
+      <div class="projects">
+        <h1> <i class="icon-book" ></i> Recent Work Experience </h1>
+          <% @projects.each do |project| %>
+            <ul>
+              <h3> <%= raw project.name %> </h3> 
+              <%= raw project.description %>  
+            </ul>
+            
+          <% end %>
+      </div>
     </div>
-    <div class="row projects">
-      <ul >
-        <% @experiences.each do |experience| %>
-          <li>
-            <%= experience.name %> : <%= experience.years %>
-          </li>
-        <% end %>
-      </ul>
+    
+    <div class="span4 rightPart">
+      <aside>
+        <div class="photo">
+          <p>
+            <%= image_fu @cv.photo, nil %>
+          </p>
+        </div>
+        <div class="title">
+          <p>
+            <%=raw @cv.title %>
+          </p>
+        </div>
+        <div class="experiences">
+          <% if @experiences.any? %>
+            <ul >
+              <% @experiences.each do |experience| %>
+                <p> <%= experience.years %>+ years <%= raw experience.name %> </p> 
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+        <div class="skill">
+          <h1> <i class="icon-wrench" ></i> Toolbox </h1>
+          <ul>
+            <% @skills.each do |skill| %>
+              <p> <%= raw skill.name %>, </p>
+            <% end %>    
+          </ul>
+        </div>
+        <div class="education">
+          <% if @educations.any? %>
+            <h1> <i class="icon-list-alt" ></i> Learning</h1>
+            <ul >
+              <% @educations.each do |education| %>
+                <h3> <%= education.title %>  </h3>
+                <p> <%= raw education.institution %> </p>  
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      </aside>
     </div>
-    <section>
-      <h1>Title</h1>
-      <p>
-        <%=raw @cv.title %>
-      </p>
-    </section>
-    <section>
-      <h1>Stackoverflow Reputation</h1>
-      <p>
-        <%=raw @cv.stackoverflow_reputation %>
-      </p>
-    </section>
-    <section>
-      <h1>Blog</h1>
-      <p>
-        <%=raw @cv.blog %>
-      </p>
-    </section>
-    <section>
-      <h1>Photo</h1>
-      <p>
-        <%= image_fu @cv.photo, nil %>
-      </p>
-    </section>
-  <% end %>  
-
-
-  <% content_for :side_body do %>
-    <aside>
-      <h2><%= t('.other') %></h2>
-      <ul id="cvs">
-        <% @cvs.each do |cv| %>
-          <li>
-            <%= link_to cv.name, refinery.cvs_cv_path(cv) %>
-          </li>
-        <% end %>
-      </ul>
-    </aside>
-  <% end %>
-
+  
+  </div>
+    
   <%= render '/refinery/content_page' %>
   
 </div>

@@ -1,6 +1,12 @@
 fr:
   refinery:
     plugins:
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
       experiences:
         title: Experiences
       projects:
@@ -9,6 +15,49 @@ fr:
         title: Cvs
     cvs:
       admin:
+        educations:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Education
+            reorder: Réordonner les Educations
+            reorder_done: Fin de réordonnancement des Educations
+          records:
+            title: Educations
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Education. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Education" pour créer votre premi(er/ère) education.
+          education:
+            view_live_html: Voir ce(t/tte) education <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) education
+            delete: Supprimer définitivement ce(t/tte) education
+        languages:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Language
+            reorder: Réordonner les Languages
+            reorder_done: Fin de réordonnancement des Languages
+          records:
+            title: Languages
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Language. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Language" pour créer votre premi(er/ère) language.
+          language:
+            view_live_html: Voir ce(t/tte) language <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) language
+            delete: Supprimer définitivement ce(t/tte) language
+        skills:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Skill
+            reorder: Réordonner les Skills
+            reorder_done: Fin de réordonnancement des Skills
+          records:
+            title: Skills
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Skill. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Skill" pour créer votre premi(er/ère) skill.
+          skill:
+            view_live_html: Voir ce(t/tte) skill <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) skill
+            delete: Supprimer définitivement ce(t/tte) skill
         experiences:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Experience
@@ -52,6 +101,15 @@ fr:
             view_live_html: Voir ce(t/tte) cv <br/><em>(Ouvre une nouvelle fenêtre)</em>
             edit: Modifier ce(t/tte) cv
             delete: Supprimer définitivement ce(t/tte) cv
+      educations:
+        show:
+          other: Autres Educations
+      languages:
+        show:
+          other: Autres Languages
+      skills:
+        show:
+          other: Autres Skills
       experiences:
         show:
           other: Autres Experiences
@@ -63,6 +121,17 @@ fr:
           other: Autres Cvs
   activerecord:
     attributes:
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
       refinery/cvs/experience:
         name: Name
         years: Years
