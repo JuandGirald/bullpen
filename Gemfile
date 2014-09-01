@@ -7,6 +7,11 @@ gem 'rails', '4.1.4'
 group :development, :test do
   gem 'sqlite3'
 end
+
+group :production do
+  gem 'pg'
+end
+
 # Use SCSS for stylesheets
 gem 'twitter-bootstrap-rails'
 gem 'sass-rails', '~> 4.0.3'

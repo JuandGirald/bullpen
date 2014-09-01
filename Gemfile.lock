@@ -196,6 +196,7 @@ GEM
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyglot (0.3.5)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
@@ -310,6 +311,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   paper_trail!
+  pg
   quiet_assets
   rails (= 4.1.4)
   refinerycms!
