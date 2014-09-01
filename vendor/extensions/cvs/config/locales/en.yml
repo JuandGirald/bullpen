@@ -1,10 +1,107 @@
 en:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
+      experiences:
+        title: Experiences
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Add New Project Interest Point
+            reorder: Reorder Project Interest Points
+            reorder_done: Done Reordering Project Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Project Interest Points yet. Click "Add New
+              Project Interest Point" to add your first project interest point.
+          project_interest_point:
+            view_live_html: View this project interest point live <br/><em>(opens
+              in a new window)</em>
+            edit: Edit this project interest point
+            delete: Remove this project interest point forever
+        educations:
+          actions:
+            create_new: Add New Education
+            reorder: Reorder Educations
+            reorder_done: Done Reordering Educations
+          records:
+            title: Educations
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Educations yet. Click "Add New Education" to
+              add your first education.
+          education:
+            view_live_html: View this education live <br/><em>(opens in a new window)</em>
+            edit: Edit this education
+            delete: Remove this education forever
+        languages:
+          actions:
+            create_new: Add New Language
+            reorder: Reorder Languages
+            reorder_done: Done Reordering Languages
+          records:
+            title: Languages
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Languages yet. Click "Add New Language" to
+              add your first language.
+          language:
+            view_live_html: View this language live <br/><em>(opens in a new window)</em>
+            edit: Edit this language
+            delete: Remove this language forever
+        skills:
+          actions:
+            create_new: Add New Skill
+            reorder: Reorder Skills
+            reorder_done: Done Reordering Skills
+          records:
+            title: Skills
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Skills yet. Click "Add New Skill" to add your
+              first skill.
+          skill:
+            view_live_html: View this skill live <br/><em>(opens in a new window)</em>
+            edit: Edit this skill
+            delete: Remove this skill forever
+        experiences:
+          actions:
+            create_new: Add New Experience
+            reorder: Reorder Experiences
+            reorder_done: Done Reordering Experiences
+          records:
+            title: Experiences
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Experiences yet. Click "Add New Experience"
+              to add your first experience.
+          experience:
+            view_live_html: View this experience live <br/><em>(opens in a new window)</em>
+            edit: Edit this experience
+            delete: Remove this experience forever
+        projects:
+          actions:
+            create_new: Add New Project
+            reorder: Reorder Projects
+            reorder_done: Done Reordering Projects
+          records:
+            title: Projects
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Projects yet. Click "Add New Project" to add
+              your first project.
+          project:
+            view_live_html: View this project live <br/><em>(opens in a new window)</em>
+            edit: Edit this project
+            delete: Remove this project forever
         cvs:
           actions:
             create_new: Add New Cv
@@ -13,17 +110,58 @@ en:
           records:
             title: Cvs
             sorry_no_results: Sorry! There are no results found.
-            no_items_yet: There are no Cvs yet. Click "Add New Cv" to add your first cv.
+            no_items_yet: There are no Cvs yet. Click "Add New Cv" to add your first
+              cv.
           cv:
             view_live_html: View this cv live <br/><em>(opens in a new window)</em>
             edit: Edit this cv
             delete: Remove this cv forever
+      project_interest_points:
+        show:
+          other: Other Project Interest Points
+      educations:
+        show:
+          other: Other Educations
+      languages:
+        show:
+          other: Other Languages
+      skills:
+        show:
+          other: Other Skills
+      experiences:
+        show:
+          other: Other Experiences
+      projects:
+        show:
+          other: Other Projects
       cvs:
         show:
           other: Other Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

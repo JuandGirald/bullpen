@@ -1,10 +1,110 @@
 fr:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
+      experiences:
+        title: Experiences
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Project Interest Point
+            reorder: Réordonner les Project Interest Points
+            reorder_done: Fin de réordonnancement des Project Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Project Interest Point. Cliquer
+              sur "Créer un(e) nouve(au/l/lle) Project Interest Point" pour créer
+              votre premi(er/ère) project interest point.
+          project_interest_point:
+            view_live_html: Voir ce(t/tte) project interest point <br/><em>(Ouvre
+              une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) project interest point
+            delete: Supprimer définitivement ce(t/tte) project interest point
+        educations:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Education
+            reorder: Réordonner les Educations
+            reorder_done: Fin de réordonnancement des Educations
+          records:
+            title: Educations
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Education. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Education" pour créer votre premi(er/ère) education.
+          education:
+            view_live_html: Voir ce(t/tte) education <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) education
+            delete: Supprimer définitivement ce(t/tte) education
+        languages:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Language
+            reorder: Réordonner les Languages
+            reorder_done: Fin de réordonnancement des Languages
+          records:
+            title: Languages
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Language. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Language" pour créer votre premi(er/ère) language.
+          language:
+            view_live_html: Voir ce(t/tte) language <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) language
+            delete: Supprimer définitivement ce(t/tte) language
+        skills:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Skill
+            reorder: Réordonner les Skills
+            reorder_done: Fin de réordonnancement des Skills
+          records:
+            title: Skills
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Skill. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Skill" pour créer votre premi(er/ère) skill.
+          skill:
+            view_live_html: Voir ce(t/tte) skill <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) skill
+            delete: Supprimer définitivement ce(t/tte) skill
+        experiences:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Experience
+            reorder: Réordonner les Experiences
+            reorder_done: Fin de réordonnancement des Experiences
+          records:
+            title: Experiences
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Experience. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Experience" pour créer votre premi(er/ère) experience.
+          experience:
+            view_live_html: Voir ce(t/tte) experience <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) experience
+            delete: Supprimer définitivement ce(t/tte) experience
+        projects:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Project
+            reorder: Réordonner les Projects
+            reorder_done: Fin de réordonnancement des Projects
+          records:
+            title: Projects
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Project. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Project" pour créer votre premi(er/ère) project.
+          project:
+            view_live_html: Voir ce(t/tte) project <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) project
+            delete: Supprimer définitivement ce(t/tte) project
         cvs:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Cv
@@ -12,18 +112,59 @@ fr:
             reorder_done: Fin de réordonnancement des Cvs
           records:
             title: Cvs
-            sorry_no_results: "Désolé ! Aucun résultat."
-            no_items_yet: 'Il n''y a actuellement aucun(e) Cv. Cliquer sur "Créer un(e) nouve(au/l/lle) Cv" pour créer votre premi(er/ère) cv.'
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Cv. Cliquer sur "Créer un(e)
+              nouve(au/l/lle) Cv" pour créer votre premi(er/ère) cv.
           cv:
             view_live_html: Voir ce(t/tte) cv <br/><em>(Ouvre une nouvelle fenêtre)</em>
             edit: Modifier ce(t/tte) cv
             delete: Supprimer définitivement ce(t/tte) cv
+      project_interest_points:
+        show:
+          other: Autres Project Interest Points
+      educations:
+        show:
+          other: Autres Educations
+      languages:
+        show:
+          other: Autres Languages
+      skills:
+        show:
+          other: Autres Skills
+      experiences:
+        show:
+          other: Autres Experiences
+      projects:
+        show:
+          other: Autres Projects
       cvs:
         show:
           other: Autres Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

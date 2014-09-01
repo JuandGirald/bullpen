@@ -1,10 +1,113 @@
 nb:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
+      experiences:
+        title: Experiences
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Lag en ny Project Interest Point
+            reorder: Endre rekkefølgen på Project Interest Points
+            reorder_done: Ferdig å endre rekkefølgen Project Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Project Interest Points enda. Klikk på "Lag
+              en ny Project Interest Point" for å legge til din første project interest
+              point.
+          project_interest_point:
+            view_live_html: Vis hvordan denne project interest point ser ut offentlig
+              <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne project interest point
+            delete: Fjern denne project interest point permanent
+        educations:
+          actions:
+            create_new: Lag en ny Education
+            reorder: Endre rekkefølgen på Educations
+            reorder_done: Ferdig å endre rekkefølgen Educations
+          records:
+            title: Educations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Educations enda. Klikk på "Lag en ny Education"
+              for å legge til din første education.
+          education:
+            view_live_html: Vis hvordan denne education ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne education
+            delete: Fjern denne education permanent
+        languages:
+          actions:
+            create_new: Lag en ny Language
+            reorder: Endre rekkefølgen på Languages
+            reorder_done: Ferdig å endre rekkefølgen Languages
+          records:
+            title: Languages
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Languages enda. Klikk på "Lag en ny Language"
+              for å legge til din første language.
+          language:
+            view_live_html: Vis hvordan denne language ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne language
+            delete: Fjern denne language permanent
+        skills:
+          actions:
+            create_new: Lag en ny Skill
+            reorder: Endre rekkefølgen på Skills
+            reorder_done: Ferdig å endre rekkefølgen Skills
+          records:
+            title: Skills
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Skills enda. Klikk på "Lag en ny Skill" for
+              å legge til din første skill.
+          skill:
+            view_live_html: Vis hvordan denne skill ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne skill
+            delete: Fjern denne skill permanent
+        experiences:
+          actions:
+            create_new: Lag en ny Experience
+            reorder: Endre rekkefølgen på Experiences
+            reorder_done: Ferdig å endre rekkefølgen Experiences
+          records:
+            title: Experiences
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Experiences enda. Klikk på "Lag en ny Experience"
+              for å legge til din første experience.
+          experience:
+            view_live_html: Vis hvordan denne experience ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne experience
+            delete: Fjern denne experience permanent
+        projects:
+          actions:
+            create_new: Lag en ny Project
+            reorder: Endre rekkefølgen på Projects
+            reorder_done: Ferdig å endre rekkefølgen Projects
+          records:
+            title: Projects
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Projects enda. Klikk på "Lag en ny Project"
+              for å legge til din første project.
+          project:
+            view_live_html: Vis hvordan denne project ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne project
+            delete: Fjern denne project permanent
         cvs:
           actions:
             create_new: Lag en ny Cv
@@ -13,17 +116,59 @@ nb:
           records:
             title: Cvs
             sorry_no_results: Beklager! Vi fant ikke noen resultater.
-            no_items_yet: Det er ingen Cvs enda. Klikk på "Lag en ny Cv" for å legge til din første cv.
+            no_items_yet: Det er ingen Cvs enda. Klikk på "Lag en ny Cv" for å legge
+              til din første cv.
           cv:
-            view_live_html: Vis hvordan denne cv ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            view_live_html: Vis hvordan denne cv ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
             edit: Rediger denne cv
             delete: Fjern denne cv permanent
+      project_interest_points:
+        show:
+          other: Andre Project Interest Points
+      educations:
+        show:
+          other: Andre Educations
+      languages:
+        show:
+          other: Andre Languages
+      skills:
+        show:
+          other: Andre Skills
+      experiences:
+        show:
+          other: Andre Experiences
+      projects:
+        show:
+          other: Andre Projects
       cvs:
         show:
           other: Andre Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

@@ -3,9 +3,60 @@ cs:
     plugins:
       cvs:
         title: Cvs
+        description: Poskytuje kontaktní formulář a zaznamenáva cvs
+      project_interest_points:
+        title: Project Interest Points
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
+      experiences:
+        title: Experiences
+      projects:
+        title: Projects
     cvs:
+      cvs:
+        new:
+          send: Odeslat zprávu
+          privacy_policy: Chráníme vaše soukromí
+        show:
+          other: Další Cvs
       admin:
         cvs:
+          delete: Trvale odstranit cv
+          cv:
+            read_cv: Přečíst cv
+            said: řekl
+            mark_as_spam: Označit jako spam
+            mark_as_ham: Označit jako přečtené
+            view_live_html: Zobrazit náhled cv<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit cv
+            delete: Smazat cv
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Upravit seznam notifikovaných
+            edit_confirmation_email: Upravit potvrzovací e-mail
+          index:
+            no_cvs: Zatím jste neobdrželi žádné cvs.
+          spam:
+            no_spam: Hurá! Nemáte žádný spam.
+          show:
+            details: Podrobnosti
+            age: Věk
+            actions: Akce
+            back_to_all_cvs: Zpět na všechny cvs
+            spam: Spam
+            spam_yes: ano
+            cv: Cv
+            to: Komu
+            from: Od
+            click_to_email: Klikněte pro odeslání této adresy e-mailem
+            phone: Telefon
+            date: Datum
+            message: Zpráva
           actions:
             create_new: Přidat Cv
             reorder: Řadit Cvs
@@ -13,17 +64,178 @@ cs:
           records:
             title: Cvs
             sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
-            no_items_yet: Zatím nebyly vytvořeny žádné Cvs. Zvolte "Přidat Cv" pro přidání prvního cv.
-          cv:
-            view_live_html: Zobrazit náhled cv<br/><em>(otevře se v novém okně)</em>
-            edit: Upravit cv
-            delete: Smazat cv
-      cvs:
+            no_items_yet: Zatím nebyly vytvořeny žádné Cvs. Zvolte "Přidat Cv" pro
+              přidání prvního cv.
+        settings:
+          notification_recipients_form:
+            settings_value_name: Zaslat upozornění pro
+            explanation: Pokaždé, když Vás někdo kontaktuje přes vaše webové stránky,
+              Refinery odešle e-mail s upozorněním na nový cv.
+            hint: Když je odeslán nový cv, Refinery pošle upozornení na Váš e-mail.
+            example: 'Zadejte e-mailové adresy jako: jack@work.com, jill@office.com'
+          confirmation_email_form:
+            to: Komu
+            from: Od
+            subject: Předmet
+            click_to_edit_subject: Klikněte zde pro editaci předmetu
+            explanation: Když Vás někdo kontaktuje přes vaše webové stránky, Refinery
+              odešle e-mail s potvrzením o přijetí odesílateli cv.
+            below_edit_email_sent: Níže můžete upravit e-mail, který je odeslán.
+            the_customer_making_cv: Klient delá cv
+            message: Zpráva
+            note: 'Poznámka: umístěte text %name%, pro určení pozice jména klienta
+              v e-maile'
+        project_interest_points:
+          actions:
+            create_new: Přidat Project Interest Point
+            reorder: Řadit Project Interest Points
+            reorder_done: Konec řazení Project Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Project Interest Points. Zvolte
+              "Přidat Project Interest Point" pro přidání prvního project interest
+              point.
+          project_interest_point:
+            view_live_html: Zobrazit náhled project interest point<br/><em>(otevře
+              se v novém okně)</em>
+            edit: Upravit project interest point
+            delete: Smazat project interest point
+        educations:
+          actions:
+            create_new: Přidat Education
+            reorder: Řadit Educations
+            reorder_done: Konec řazení Educations
+          records:
+            title: Educations
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Educations. Zvolte "Přidat
+              Education" pro přidání prvního education.
+          education:
+            view_live_html: Zobrazit náhled education<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit education
+            delete: Smazat education
+        languages:
+          actions:
+            create_new: Přidat Language
+            reorder: Řadit Languages
+            reorder_done: Konec řazení Languages
+          records:
+            title: Languages
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Languages. Zvolte "Přidat Language"
+              pro přidání prvního language.
+          language:
+            view_live_html: Zobrazit náhled language<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit language
+            delete: Smazat language
+        skills:
+          actions:
+            create_new: Přidat Skill
+            reorder: Řadit Skills
+            reorder_done: Konec řazení Skills
+          records:
+            title: Skills
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Skills. Zvolte "Přidat Skill"
+              pro přidání prvního skill.
+          skill:
+            view_live_html: Zobrazit náhled skill<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit skill
+            delete: Smazat skill
+        experiences:
+          actions:
+            create_new: Přidat Experience
+            reorder: Řadit Experiences
+            reorder_done: Konec řazení Experiences
+          records:
+            title: Experiences
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Experiences. Zvolte "Přidat
+              Experience" pro přidání prvního experience.
+          experience:
+            view_live_html: Zobrazit náhled experience<br/><em>(otevře se v novém
+              okně)</em>
+            edit: Upravit experience
+            delete: Smazat experience
+        projects:
+          actions:
+            create_new: Přidat Project
+            reorder: Řadit Projects
+            reorder_done: Konec řazení Projects
+          records:
+            title: Projects
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Projects. Zvolte "Přidat Project"
+              pro přidání prvního project.
+          project:
+            view_live_html: Zobrazit náhled project<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit project
+            delete: Smazat project
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_cv: You just received a new cv on your website.
+          cv_starts: '--- cv starts ---'
+          cv_ends: '--- cv ends ---'
+          from: Od
+          email: E-mail
+          phone: Telefon
+          message: Zpráva
+          closing_line: S pozdravem
+          ps_html: P.S. Všechny vaše cvs jsou uloženy pod záložkou "Cvs" v Refinery,
+            pokud by jste je chtěli zobrazit pozdeji.
+      project_interest_points:
         show:
-          other: Další Cvs
+          other: Další Project Interest Points
+      educations:
+        show:
+          other: Další Educations
+      languages:
+        show:
+          other: Další Languages
+      skills:
+        show:
+          other: Další Skills
+      experiences:
+        show:
+          other: Další Experiences
+      projects:
+        show:
+          other: Další Projects
   activerecord:
+    models:
+      cv: Cv
     attributes:
-      'refinery/cvs/cv':
+      cv:
+        name: Name
+        profile: Profile
+        title: Title
+        stackoverflow_reputation: Stackoverflow reputation
+        blog: Blog
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

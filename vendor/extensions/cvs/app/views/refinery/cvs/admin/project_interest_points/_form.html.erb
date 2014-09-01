@@ -1,0 +1,20 @@
+<%= form_for [refinery, :cvs_admin, @project_interest_point] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @project_interest_point,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :content -%>
+    <%= f.text_field :content, :class => 'larger widest' -%>
+  </div>
+
+  <div class="field">
+    <%= f.label :project -%>
+    <%= f.select(:project_id, @projects.collect {|p| [p.name, p.id] })%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.project_interest_points.admin.project_interest_points.project_interest_point'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @project_interest_point.content) -%>
+<% end -%>

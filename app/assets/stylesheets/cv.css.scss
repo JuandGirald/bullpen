@@ -1,7 +1,160 @@
 // Cv Styles
 
-#cv {
+#cvs-page {
+  #page {
+    .container {
+      background-color: #E7E6E6;
+      color: #4b4b4b;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      h1 {
+        color: #D57B1A;
+        font-size: 2.5em;
+        text-align: left;
+      }
+    }
+  }
   #body_content {
     margin-top: 2em;
   }
+}
+
+.name{
+  margin-top: 2em;
+  h1 {
+    color: black !important;
+    font-size: 130px !important;
+    height: 120px;
+    margin-right: 0.4em;
+    font-family: "Droid Serif", serif;
+    font-weight: bold;
+    text-align: right !important;
+    padding-top: 40px;
+  }
+}
+.profile{
+  margin: 0 3em;
+  h1{
+    font-size: 2.5em;
+  }
+  p {
+    margin-left: 25px;
+    margin-top: 2em;
+    text-align: justify;
+  }
+}
+.projects{
+  margin: 0 3em;
+  margin-bottom: 2em;
+  h3 {
+    color: #727272 !important;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+.projects .projectName{
+    color: #727272;
+    font-size: 30px;
+    font-family: "Droid Serif", serif;
+}
+.projects .projectUrl{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.projects .projectInteresting{
+  list-style-type: none;
+  margin-top: 1em;
+  margin-left: 1em;
+  li {
+    line-height: 25px;
+  }
+  li:before {
+    color: #D57B1A;
+    content: "■";
+    font-size: 1.5em;
+  } 
+}
+
+
+.open-source{
+}
+.practices{
+}
+
+.experiences {
+  color: black !important;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 2em;
+  text-align: left;
+}
+.education{
+  margin-top: 2em;
+  p{
+    color: #D57B1A !important;
+  }
+}
+
+.skill {
+  margin-bottom: 4em;
+  margin-top: 2em;
+  p {
+    float: left;
+    margin-right: 5px;
+    position: relative;
+  }
+}
+
+.photo {
+  margin-top: 2em;
+  text-align: center;
+  img {
+    width: 70%;
+    -webkit-border-radius: 7em;
+    -moz-border-radius: 7em;
+    border-radius: 7em;
+  }
+}
+
+.title{
+  color: #727272;
+  font-size: 2.5em;
+  font-family: "Droid Serif", serif;
+  text-align: center;
+  line-height: 50px;
+}
+.toolbox{
+}
+
+.rightPart{
+  h1{
+    font-size: 2em !important;  
+  }
+}
+
+.leftPart{
+    border-right: 4px dashed #D57B1A;
+    // border-style: none dashed none none;
+    margin-bottom: -30px;
+    margin-top: 10px;
+}
+
+.sectionTitle {
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #D57B1A !important;
+    font-family: "Droid Serif", serif !important;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.sectionContent{
+    padding-left: 30px;
+}
+.section {
+    text-align: justify;
+}
+
+.cv {
 }

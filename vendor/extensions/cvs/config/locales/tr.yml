@@ -1,10 +1,112 @@
 tr:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
+      experiences:
+        title: Experiences
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Yeni Ekle Project Interest Point
+            reorder: Tekrar sirala Project Interest Points
+            reorder_done: Tekrar siralama tamamlandiProject Interest Points
+          records:
+            title: Project Interest Points
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Project Interest Points yok henuz.  Tikla "Yeni
+              Ekle Project Interest Point" eklemek senin ilk project interest point.
+          project_interest_point:
+            view_live_html: Bunu canlu project interest point goruntule <br/><em>(yeni
+              bir pencerede acar)</em>
+            edit: Bunu Duzenle project interest point
+            delete: Bunu Sil project interest point sonsuza dek
+        educations:
+          actions:
+            create_new: Yeni Ekle Education
+            reorder: Tekrar sirala Educations
+            reorder_done: Tekrar siralama tamamlandiEducations
+          records:
+            title: Educations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Educations yok henuz.  Tikla "Yeni Ekle Education"
+              eklemek senin ilk education.
+          education:
+            view_live_html: Bunu canlu education goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle education
+            delete: Bunu Sil education sonsuza dek
+        languages:
+          actions:
+            create_new: Yeni Ekle Language
+            reorder: Tekrar sirala Languages
+            reorder_done: Tekrar siralama tamamlandiLanguages
+          records:
+            title: Languages
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Languages yok henuz.  Tikla "Yeni Ekle Language"
+              eklemek senin ilk language.
+          language:
+            view_live_html: Bunu canlu language goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle language
+            delete: Bunu Sil language sonsuza dek
+        skills:
+          actions:
+            create_new: Yeni Ekle Skill
+            reorder: Tekrar sirala Skills
+            reorder_done: Tekrar siralama tamamlandiSkills
+          records:
+            title: Skills
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Skills yok henuz.  Tikla "Yeni Ekle Skill"
+              eklemek senin ilk skill.
+          skill:
+            view_live_html: Bunu canlu skill goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle skill
+            delete: Bunu Sil skill sonsuza dek
+        experiences:
+          actions:
+            create_new: Yeni Ekle Experience
+            reorder: Tekrar sirala Experiences
+            reorder_done: Tekrar siralama tamamlandiExperiences
+          records:
+            title: Experiences
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Experiences yok henuz.  Tikla "Yeni Ekle Experience"
+              eklemek senin ilk experience.
+          experience:
+            view_live_html: Bunu canlu experience goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle experience
+            delete: Bunu Sil experience sonsuza dek
+        projects:
+          actions:
+            create_new: Yeni Ekle Project
+            reorder: Tekrar sirala Projects
+            reorder_done: Tekrar siralama tamamlandiProjects
+          records:
+            title: Projects
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Projects yok henuz.  Tikla "Yeni Ekle Project"
+              eklemek senin ilk project.
+          project:
+            view_live_html: Bunu canlu project goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle project
+            delete: Bunu Sil project sonsuza dek
         cvs:
           actions:
             create_new: Yeni Ekle Cv
@@ -13,17 +115,58 @@ tr:
           records:
             title: Cvs
             sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
-            no_items_yet: Herhangi bir Cvs yok henuz.  Tikla "Yeni Ekle Cv" eklemek senin ilk cv.
+            no_items_yet: Herhangi bir Cvs yok henuz.  Tikla "Yeni Ekle Cv" eklemek
+              senin ilk cv.
           cv:
             view_live_html: Bunu canlu cv goruntule <br/><em>(yeni bir pencerede acar)</em>
             edit: Bunu Duzenle cv
             delete: Bunu Sil cv sonsuza dek
+      project_interest_points:
+        show:
+          other: Diger Project Interest Points
+      educations:
+        show:
+          other: Diger Educations
+      languages:
+        show:
+          other: Diger Languages
+      skills:
+        show:
+          other: Diger Skills
+      experiences:
+        show:
+          other: Diger Experiences
+      projects:
+        show:
+          other: Diger Projects
       cvs:
         show:
           other: Diger Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

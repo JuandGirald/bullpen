@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="educations">
+    <% @educations.each do |education| %>
+      <li>
+        <%= link_to education.title, refinery.cvs_education_path(education) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,40 @@
+<%= form_for [refinery, :cvs_admin, @project] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @project,
+              :include_object_name => true %>
+
+  <div class="field">
+    <%= f.label :developer -%>
+    <%= f.select(:cv_id, @cvs.collect {|d| [d.name, d.id] })%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :url -%>
+    <%= f.text_field :url -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "cvs/project" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.projects.admin.projects.project'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @project.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

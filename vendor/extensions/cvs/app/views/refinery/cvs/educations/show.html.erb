@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @education.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @education.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Institution</h1>
+    <p>
+      <%=raw @education.institution %>
+    </p>
+  </section>
+  <section>
+    <h1>Cv</h1>
+    <p>
+      <%=raw @education.cv_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="educations">
+      <% @educations.each do |education| %>
+        <li>
+          <%= link_to education.title, refinery.cvs_education_path(education) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

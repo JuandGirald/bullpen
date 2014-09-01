@@ -1,11 +1,113 @@
 es:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
+      experiences:
+        title: Experiences
+      projects:
+        title: Projects
       cvs:
         title: Cvs
-#        article: masculino/femenino
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Crear nuevo project interest point
+            reorder: Reordenar project interest points
+            reorder_done: Reordenación de project interest points completada
+          records:
+            title: Project Interest Points
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay project interest points todavía. Pulsa en "Crear
+              nuevo Project Interest Point" para crear tu primer project interest
+              point.
+          project_interest_point:
+            view_live_html: Ver este project interest point como abierto al público
+              <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este project interest point
+            delete: Borrar este project interest point para siempre
+        educations:
+          actions:
+            create_new: Crear nuevo education
+            reorder: Reordenar educations
+            reorder_done: Reordenación de educations completada
+          records:
+            title: Educations
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay educations todavía. Pulsa en "Crear nuevo Education"
+              para crear tu primer education.
+          education:
+            view_live_html: Ver este education como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este education
+            delete: Borrar este education para siempre
+        languages:
+          actions:
+            create_new: Crear nuevo language
+            reorder: Reordenar languages
+            reorder_done: Reordenación de languages completada
+          records:
+            title: Languages
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay languages todavía. Pulsa en "Crear nuevo Language"
+              para crear tu primer language.
+          language:
+            view_live_html: Ver este language como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este language
+            delete: Borrar este language para siempre
+        skills:
+          actions:
+            create_new: Crear nuevo skill
+            reorder: Reordenar skills
+            reorder_done: Reordenación de skills completada
+          records:
+            title: Skills
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay skills todavía. Pulsa en "Crear nuevo Skill" para
+              crear tu primer skill.
+          skill:
+            view_live_html: Ver este skill como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este skill
+            delete: Borrar este skill para siempre
+        experiences:
+          actions:
+            create_new: Crear nuevo experience
+            reorder: Reordenar experiences
+            reorder_done: Reordenación de experiences completada
+          records:
+            title: Experiences
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay experiences todavía. Pulsa en "Crear nuevo Experience"
+              para crear tu primer experience.
+          experience:
+            view_live_html: Ver este experience como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este experience
+            delete: Borrar este experience para siempre
+        projects:
+          actions:
+            create_new: Crear nuevo project
+            reorder: Reordenar projects
+            reorder_done: Reordenación de projects completada
+          records:
+            title: Projects
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay projects todavía. Pulsa en "Crear nuevo Project"
+              para crear tu primer project.
+          project:
+            view_live_html: Ver este project como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este project
+            delete: Borrar este project para siempre
         cvs:
           actions:
             create_new: Crear nuevo cv
@@ -14,17 +116,59 @@ es:
           records:
             title: Cvs
             sorry_no_results: Lo siento, no hay resultados
-            no_items_yet: No hay cvs todavía. Pulsa en "Crear nuevo Cv" para crear tu primer cv.
+            no_items_yet: No hay cvs todavía. Pulsa en "Crear nuevo Cv" para crear
+              tu primer cv.
           cv:
-            view_live_html: Ver este cv como abierto al público <br/><em>(abre en ventana nueva)</em>
+            view_live_html: Ver este cv como abierto al público <br/><em>(abre en
+              ventana nueva)</em>
             edit: Editar este cv
             delete: Borrar este cv para siempre
+      project_interest_points:
+        show:
+          other: Otros project interest points
+      educations:
+        show:
+          other: Otros educations
+      languages:
+        show:
+          other: Otros languages
+      skills:
+        show:
+          other: Otros skills
+      experiences:
+        show:
+          other: Otros experiences
+      projects:
+        show:
+          other: Otros projects
       cvs:
         show:
           other: Otros cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title

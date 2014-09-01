@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Cvs::Admin::LanguagesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.cvs_admin_languages_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_cvs_admin_language_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Cvs::Admin::LanguagesController.sortable? && ::Refinery::Cvs::Language.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Languages"),
+                 refinery.cvs_admin_languages_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Languages"),
+                 refinery.cvs_admin_languages_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

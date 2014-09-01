@@ -1,10 +1,112 @@
 nl:
   refinery:
     plugins:
+      project_interest_points:
+        title: Project Interest Points
+      educations:
+        title: Educations
+      languages:
+        title: Languages
+      skills:
+        title: Skills
+      experiences:
+        title: Experiences
+      projects:
+        title: Projects
       cvs:
         title: Cvs
     cvs:
       admin:
+        project_interest_points:
+          actions:
+            create_new: Nieuwe Project Interest Point toevoegen
+            reorder: De volgorde van de Project Interest Points wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Project Interest Point-volgorde
+          records:
+            title: Project Interest Points
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Project Interest Points. Druk op 'Nieuwe
+              Project Interest Point toevoegen' om de eerste toe te voegen.
+          project_interest_point:
+            view_live_html: Deze project interest point op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze project interest point
+            delete: Deze project interest point definitief verwijderen
+        educations:
+          actions:
+            create_new: Nieuwe Education toevoegen
+            reorder: De volgorde van de Educations wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Education-volgorde
+          records:
+            title: Educations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Educations. Druk op 'Nieuwe Education toevoegen'
+              om de eerste toe te voegen.
+          education:
+            view_live_html: Deze education op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze education
+            delete: Deze education definitief verwijderen
+        languages:
+          actions:
+            create_new: Nieuwe Language toevoegen
+            reorder: De volgorde van de Languages wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Language-volgorde
+          records:
+            title: Languages
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Languages. Druk op 'Nieuwe Language toevoegen'
+              om de eerste toe te voegen.
+          language:
+            view_live_html: Deze language op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze language
+            delete: Deze language definitief verwijderen
+        skills:
+          actions:
+            create_new: Nieuwe Skill toevoegen
+            reorder: De volgorde van de Skills wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Skill-volgorde
+          records:
+            title: Skills
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Skills. Druk op 'Nieuwe Skill toevoegen'
+              om de eerste toe te voegen.
+          skill:
+            view_live_html: Deze skill op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
+            edit: Bewerk deze skill
+            delete: Deze skill definitief verwijderen
+        experiences:
+          actions:
+            create_new: Nieuwe Experience toevoegen
+            reorder: De volgorde van de Experiences wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Experience-volgorde
+          records:
+            title: Experiences
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Experiences. Druk op 'Nieuwe Experience
+              toevoegen' om de eerste toe te voegen.
+          experience:
+            view_live_html: Deze experience op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze experience
+            delete: Deze experience definitief verwijderen
+        projects:
+          actions:
+            create_new: Nieuwe Project toevoegen
+            reorder: De volgorde van de Projects wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Project-volgorde
+          records:
+            title: Projects
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Projects. Druk op 'Nieuwe Project toevoegen'
+              om de eerste toe te voegen.
+          project:
+            view_live_html: Deze project op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze project
+            delete: Deze project definitief verwijderen
         cvs:
           actions:
             create_new: Nieuwe Cv toevoegen
@@ -13,17 +115,59 @@ nl:
           records:
             title: Cvs
             sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
-            no_items_yet: Er zijn nog geen Cvs. Druk op 'Nieuwe Cv toevoegen' om de eerste toe te voegen.
+            no_items_yet: Er zijn nog geen Cvs. Druk op 'Nieuwe Cv toevoegen' om de
+              eerste toe te voegen.
           cv:
-            view_live_html: Deze cv op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            view_live_html: Deze cv op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
             edit: Bewerk deze cv
             delete: Deze cv definitief verwijderen
+      project_interest_points:
+        show:
+          other: Andere Project Interest Points
+      educations:
+        show:
+          other: Andere Educations
+      languages:
+        show:
+          other: Andere Languages
+      skills:
+        show:
+          other: Andere Skills
+      experiences:
+        show:
+          other: Andere Experiences
+      projects:
+        show:
+          other: Andere Projects
       cvs:
         show:
           other: Andere Cvs
   activerecord:
     attributes:
-      'refinery/cvs/cv':
+      refinery/cvs/project_interest_point:
+        content: Content
+        project_id: Project
+      refinery/cvs/education:
+        title: Title
+        institution: Institution
+        cv_id: Cv
+      refinery/cvs/language:
+        name: Name
+        level: Level
+        cv_id: Cv
+      refinery/cvs/skill:
+        name: Name
+        cv_id: Cv
+      refinery/cvs/experience:
+        name: Name
+        years: Years
+        cv_id: Cv
+      refinery/cvs/project:
+        name: Name
+        url: Url
+        description: Description
+      refinery/cvs/cv:
         name: Name
         profile: Profile
         title: Title
